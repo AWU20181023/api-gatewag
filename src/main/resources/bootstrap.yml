@@ -16,8 +16,9 @@ zuul:
     myProduct:
       path: /myProduct/**
       serviceId: production
+      sensitiveHeaders:
   ignored-patterns:
-    - /myProduct/listForOrder
+  - /myProduct/listForOrder
 management:
   endpoints:
     web:
